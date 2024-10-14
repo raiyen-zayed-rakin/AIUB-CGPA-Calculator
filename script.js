@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react"
+import { inject } from "@vercel/analytics"
 
 
 // Function to toggle between light and dark theme by switching class on <body>
