@@ -47,7 +47,7 @@ function calculateCGPA() {
         resultElement.style.color = "red";
     }
     // Reset input fields after calculation
-    resetInputFields();
+    //resetInputFields();
 }
 
 function validateInput(value) {
