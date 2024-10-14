@@ -1,8 +1,8 @@
 // Function to toggle between light and dark theme by switching class on <body>
 function toggleTheme() {
     const bodyElement = document.body;
-    bodyElement.classList.toggle('dark-theme');
     bodyElement.classList.toggle('light-theme');
+    bodyElement.classList.toggle('dark-theme');
 }
 
 // CGPA calculation function
