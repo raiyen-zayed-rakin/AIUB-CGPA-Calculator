@@ -26,11 +26,14 @@ function calculateCGPA() {
         const occurrences = parseFloat(document.getElementById(grade).value) || 0;
         const credits = parseFloat(document.getElementById(`${grade}Credits`).value) || 0;
         
-        totalPoints += credits * gradePoints[grade]; // Total points = occurrences * credits * grade points
-        totalCredits += credits; // Total credits
+        if (!validateInput(occurrences) || !validateInput(gradeCredits)) {
+            totalPoints += credits * gradePoints[grade]; // Total points = occurrences * credits * grade points
+            totalCredits += credits; // Total credits
+        }
     }
     const cgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0.00;
     document.getElementById('cgpaResult').innerText = cgpa.toFixed(2);
+    document.getElementById('totalCredit').innerText = totalCredits;
 
     const resultElement = document.getElementById("cgpaResult");
     if (cgpa >= 3.5) {
@@ -42,6 +45,15 @@ function calculateCGPA() {
     }
     // Reset input fields after calculation
     resetInputFields();
+}
+
+function validateInput(value) {
+    if (value < 0) {
+        alert("Values cannot be negative.");
+        resetInputFields();
+        return true;
+    }
+    return false;
 }
 
 // Function to reset all input fields
@@ -60,3 +72,7 @@ function showInfo() {
         label.style.display = 'none';  // Hide the label
     }
 }
+// Optional real-time calculation
+// document.querySelectorAll('input').forEach(input => {
+//     input.addEventListener('input', calculateCGPA);
+// });
