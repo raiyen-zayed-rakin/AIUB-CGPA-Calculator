@@ -34,7 +34,7 @@ function calculateCGPA() {
 
     const resultElement = document.getElementById("cgpaResult");
     if (cgpa >= 3.5) {
-        resultElement.style.color = "green";
+        resultElement.style.color = "greenyellow";
     } else if (cgpa >= 2.0) {
         resultElement.style.color = "orange";
     } else {
