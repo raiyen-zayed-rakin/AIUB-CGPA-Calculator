@@ -1,0 +1,93 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #387478; /* Light background color */
+    color: white; /* Dark text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme changes */
+}
+
+.card {
+    background-color: #629584;
+    border: none; /* Remove card border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+
+}
+.input-group {
+    border-radius: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    height: 90px;
+}
+h1, h3 {
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background-color: #343a40; /* Dark background color */
+    color: #f8f9fa; /* Light text color */
+}
+
+.dark-theme .input-group-text {
+    background-color: #495057; /* Darker background for input labels */
+    color: #f8f9fa; /* Light text color for labels */
+}
+
+.dark-theme .form-control {
+    background-color: #495057; /* Darker input background */
+    color: #f8f9fa; /* Light text color for inputs */
+    border: 1px solid #ced4da; /* Light border */
+}
+
+.dark-theme .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Border color for button */
+}
+
+.dark-theme .btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    border-color: #6c757d; /* Border color for secondary button */
+}
+
+/* Light theme styles */
+.light-theme .input-group-text {
+    background-color: #E2F1E7; /* Primary color for input labels */
+    color: #387478; /* White text color for labels */
+}
+
+.light-theme .form-control {
+    background-color: white; /* White background for inputs */
+    color: #495057; /* Dark text color for inputs */
+    border: 1px solid #ced4da; /* Light border */
+}
+
+.light-theme .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Border color for button */
+}
+
+.light-theme .btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    border-color: #6c757d; /* Border color for secondary button */
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .input-group {
+        flex-direction: column; /* Stack inputs vertically on small screens */
+    }
+}

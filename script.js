@@ -1,0 +1,45 @@
+// Function to toggle between light and dark theme by switching class on <body>
+function toggleTheme() {
+    const bodyElement = document.body;
+    bodyElement.classList.toggle('dark-theme');
+    bodyElement.classList.toggle('light-theme');
+}
+
+// CGPA calculation function
+function calculateCGPA() {
+    const gradePoints = {
+        "gradeAPlus": 4.00,
+        "gradeAMinus": 3.75,
+        "gradeBPlus": 3.50,
+        "gradeBMinus": 3.25,
+        "gradeCPlus": 3.00,
+        "gradeCMinus": 2.75,
+        "gradeDPlus": 2.50,
+        "gradeD": 2.25,
+        "gradeF": 0.00,
+    };
+
+    let totalCredits = 0;
+    let totalPoints = 0;
+
+    for (let grade in gradePoints) {
+        const occurrences = parseFloat(document.getElementById(grade).value) || 0;
+        const credits = parseFloat(document.getElementById(`${grade}Credits`).value) || 0;
+        
+        totalPoints += credits * gradePoints[grade]; // Total points = occurrences * credits * grade points
+        totalCredits += credits; // Total credits
+    }
+    const cgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0.00;
+    document.getElementById('cgpaResult').innerText = cgpa.toFixed(2);
+
+    // Reset input fields after calculation
+    resetInputFields();
+}
+
+// Function to reset all input fields
+function resetInputFields() {
+    const inputs = document.querySelectorAll('input[type="number"]');
+    inputs.forEach(input => {
+        input.value = ''; // Clear the input field
+    });
+}

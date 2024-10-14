@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIUB CGPA Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container mt-5 light-theme">
+    <div class="image-container">
+        <img src="Images/rsz_aiub.png" class="image" alt="">
+    </div>
+    <h1 class="text-center mb-4">AIUB CGPA Calculator</h1>
+    
+    <form id="cgpaForm">
+        <div class="card mb-3">
+            <h3 class="text-center mt-4">CGPA: <span id="cgpaResult">0.00</span></h3>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Enter Your Grades</h5>
+
+                <!-- A+ and A- Inputs -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">A+</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeAPlus" placeholder="Times you got A+">
+                            <input type="number" class="form-control" id="gradeAPlusCredits" placeholder="Credits for A+">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">A</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeAMinus" placeholder="Times you got A">
+                            <input type="number" class="form-control" id="gradeAMinusCredits" placeholder="Credits for A">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B+ and B- Inputs -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">B+</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeBPlus" placeholder="Times you got B+">
+                            <input type="number" class="form-control" id="gradeBPlusCredits" placeholder="Credits for B+">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">B</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeBMinus" placeholder="Times you got B">
+                            <input type="number" class="form-control" id="gradeBMinusCredits" placeholder="Credits for B">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C+ and C- Inputs -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">C+</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeCPlus" placeholder="Times you got C+">
+                            <input type="number" class="form-control" id="gradeCPlusCredits" placeholder="Credits for C+">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">C</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeCMinus" placeholder="Times you got C">
+                            <input type="number" class="form-control" id="gradeCMinusCredits" placeholder="Credits for C">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- D+ and D Inputs -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">D+</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeDPlus" placeholder="Times you got D+">
+                            <input type="number" class="form-control" id="gradeDPlusCredits" placeholder="Credits for D+">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">D</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeD" placeholder="Times you got D">
+                            <input type="number" class="form-control" id="gradeDCredits" placeholder="Credits for D">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- F Input -->
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">F</span>
+                            </div>
+                            <input type="number" class="form-control" id="gradeF" placeholder="Times you got F">
+                            <input type="number" class="form-control" id="gradeFCredits" placeholder="Credits for F">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-section row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-success" onclick="calculateCGPA()">Calculate CGPA</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-success" onclick="resetInputFields()">Clear Fields</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </form>
+
+    
+    <div class="text-center mt-3">
+        <button type="button" class="btn btn-secondary" onclick="toggleTheme()">Switch Theme</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
