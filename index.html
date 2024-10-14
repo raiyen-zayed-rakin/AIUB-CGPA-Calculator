@@ -10,21 +10,32 @@
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Font aw -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="container mt-4 light-theme">
     <div class="image-container">
         <img src="Images/rsz_aiub.png" class="image" alt="">
     </div>
     
-    <h1 class="text-center mb-4">AIUB CGPA Calculator</h1>
+    <div class="row">
+        <div class="col cgpa-section">
+            <h1 class="text-center mb-4">AIUB CGPA CALCULATOR</h1> 
+            <label class="switch ml-4" onchange="toggleTheme()">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
     
     <form id="cgpaForm">
         
-        <div class="card mb-3">
+        <div class="card mb-3 result-section">
             <div class="row">
               <div class="col cgpa-section">
                 <h3 class="text-center mt-4">CGPA: <span id="cgpaResult">0.00</span></h3>
-                <button type="button" class="btn btn-secondary how-to-btn ml-4" onclick="showInfo()">?</button> 
+                <button type="button" class="btn btn-light how-to-btn ml-4" onclick="showInfo()">?</button> 
               </div> 
             </div>
             <div class=" cgpa-section">
@@ -148,7 +159,7 @@
                         <button type="button" class="btn btn-success" onclick="calculateCGPA()">Calculate CGPA</button>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-success" onclick="resetInputFields()">Clear Fields</button>
+                        <button type="button" class="btn btn-danger" onclick="resetInputFields()">Clear Fields</button>
                     </div>
                 </div>
                 </div>
@@ -156,10 +167,24 @@
     </form>
 
     
-    <div class="text-center mt-3">
-        <button type="button" class="btn btn-secondary" onclick="toggleTheme()">Switch Theme</button>
-    </div>
-
+    
+    <footer id="footer">
+        <div class ="heading-info">
+            <h5>All rights reserved.</h5>
+        </div>
+        <div class="cgpa-section">
+            <a href="https://github.com/raiyen-zayed-rakin" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a href="www.linkedin.com/in/raiyen-zayed-rakin-948100265" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x ml-4"></i>
+            </a>
+            <a href="https://www.instagram.com/rakin_sama_/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x ml-4"></i>
+            </a>
+            
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
