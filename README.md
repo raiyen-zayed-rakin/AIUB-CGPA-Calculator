@@ -1,5 +1,5 @@
 # AIUB-CGPA-Calculator
-## Saw many of my juniors asking how to calculate CGPA beforehand correctly which I also did back in my fresher days this is plain Simple CGPA Calculator solving this simple problem.
+## Saw many of my juniors asking how to calculate CGPA beforehand correctly which I also used to ask back in my fresher days, this is plain Simple CGPA Calculator solving this particular problem.
 - No extra work,
 - No one by one course input,
 - No individual course stuff,
