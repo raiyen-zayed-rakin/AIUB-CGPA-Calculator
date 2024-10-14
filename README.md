@@ -13,5 +13,8 @@
 - Enter the values in their place. (Leave empty will be handled automatically).
 - Press Calculate CGPA and see the result.
 
+## Proxy Site:
+https://raiyen-zayed-rakin.github.io/AIUB-CGPA-Calculator/
+
 ## Contributions:
 Any sort of contributions and advices are highly appreciated. 
