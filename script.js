@@ -32,6 +32,14 @@ function calculateCGPA() {
     const cgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0.00;
     document.getElementById('cgpaResult').innerText = cgpa.toFixed(2);
 
+    const resultElement = document.getElementById("cgpaResult");
+    if (cgpa >= 3.5) {
+        resultElement.style.color = "green";
+    } else if (cgpa >= 2.0) {
+        resultElement.style.color = "orange";
+    } else {
+        resultElement.style.color = "red";
+    }
     // Reset input fields after calculation
     resetInputFields();
 }
@@ -42,4 +50,13 @@ function resetInputFields() {
     inputs.forEach(input => {
         input.value = ''; // Clear the input field
     });
+}
+
+function showInfo() {
+    const label = document.getElementById("info");
+    if (label.style.display === 'none') {
+        label.style.display = 'block'; // Show the label
+    } else {
+        label.style.display = 'none';  // Hide the label
+    }
 }

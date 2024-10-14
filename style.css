@@ -1,7 +1,8 @@
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #387478; /* Light background color */
+    background-color: #004ea2;
+    /* background-color: #387478;  */
     color: white; /* Dark text color */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme changes */
 }
@@ -21,6 +22,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 
 }
+#info {
+    display: none;
+}
 .input-group {
     border-radius: 20px;
 }
@@ -31,6 +35,12 @@ body {
 }
 .image {
     height: 90px;
+}
+
+.heading-info, .cgpa-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1, h3 {
     margin: 20px 0; /* Add margin for spacing */

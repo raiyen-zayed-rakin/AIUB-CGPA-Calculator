@@ -11,15 +11,32 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="container mt-5 light-theme">
+<body class="container mt-4 light-theme">
     <div class="image-container">
         <img src="Images/rsz_aiub.png" class="image" alt="">
     </div>
+    
     <h1 class="text-center mb-4">AIUB CGPA Calculator</h1>
     
     <form id="cgpaForm">
+        
         <div class="card mb-3">
-            <h3 class="text-center mt-4">CGPA: <span id="cgpaResult">0.00</span></h3>
+            <div class="row">
+              <div class="col cgpa-section">
+                <h3 class="text-center mt-4">CGPA: <span id="cgpaResult">0.00</span></h3>
+                <button type="button" class="btn btn-secondary how-to-btn ml-4" onclick="showInfo()">?</button> 
+              </div> 
+            </div>
+            <div class=" cgpa-section">
+                <div id="info" class = "mb-2">
+                    <h4>Instructions:</h4>
+                    1. Go to your Grade Reports BySemester page in AIUB Portal.<br>
+                    2. Count how many times each individual (A+ to F) grades you got.<br>
+                    3. Count how many credits each grade has total. (1/2/3 credit).<br>
+                    4. Enter the values in their place. (Leave empty will be handled automatically).<br>
+                    5. Press Calculate CGPA and see the result.
+                </div> 
+            </div>
         </div>
 
         <div class="card mb-3">
