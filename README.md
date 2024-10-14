@@ -12,3 +12,6 @@
 - Count how many credits each grade has total. (1/2/3 credit).
 - Enter the values in their place. (Leave empty will be handled automatically).
 - Press Calculate CGPA and see the result.
+
+## Contributions:
+Any sort of contributions and advices are highly appreciated. 
