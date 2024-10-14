@@ -4,7 +4,7 @@
 - No one by one course input,
 - No individual course stuff,
 - Just major info input and CGPA/GPA output.
-<img src="Images/Screenshot 2024-10-14 131015.png">
+<img src="Images/Screenshot 2024-10-14 171620.png">
 
 ## Intructions:
 - Go to your Grade Reports BySemester page in AIUB Portal.
