@@ -11,11 +11,11 @@ function toggleTheme() {
 function calculateCGPA() {
     const gradePoints = {
         "gradeAPlus": 4.00,
-        "gradeAMinus": 3.75,
+        "gradeA": 3.75,
         "gradeBPlus": 3.50,
-        "gradeBMinus": 3.25,
+        "gradeB": 3.25,
         "gradeCPlus": 3.00,
-        "gradeCMinus": 2.75,
+        "gradeC": 2.75,
         "gradeDPlus": 2.50,
         "gradeD": 2.25,
         "gradeF": 0.00,
@@ -28,7 +28,7 @@ function calculateCGPA() {
         const occurrences = parseFloat(document.getElementById(grade).value) || 0;
         const credits = parseFloat(document.getElementById(`${grade}Credits`).value) || 0;
         
-        if (!validateInput(occurrences) || !validateInput(gradeCredits)) {
+        if ((!validateInput(occurrences) && !validateInput(credits)) || !validateInput(gradeCredits)) {
             totalPoints += credits * gradePoints[grade]; // Total points = occurrences * credits * grade points
             totalCredits += credits; // Total credits
         }
@@ -50,11 +50,24 @@ function calculateCGPA() {
 }
 
 function validateInput(value) {
+    
+    // Convert the input to a number
+    const numberValue = parseFloat(value);
+
+    //Check if the input is not a number (but allow empty input)
+    // if (value !== "" && isNaN(value)) {
+    //     alert("Please enter a valid number.");
+    //     resetInputFields();
+    //     return true;
+    // }
+
+    // Check if the number is negative
     if (value < 0) {
         alert("Values cannot be negative.");
-        resetInputFields();
+        //resetInputFields();
         return true;
     }
+
     return false;
 }
 
