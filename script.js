@@ -1,6 +1,3 @@
-
-
-
 // Function to toggle between light and dark theme by switching class on <body>
 function toggleTheme() {
     const bodyElement = document.body;

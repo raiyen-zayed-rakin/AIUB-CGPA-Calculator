@@ -78,6 +78,9 @@ a:hover {
     height: 90px;
 }
 
+.heading-info {
+    text-align: center;
+}
 .heading-info, .cgpa-section {
     display: flex;
     justify-content: center;
