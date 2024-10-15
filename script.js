@@ -1,4 +1,4 @@
-import { inject } from '@vercel/analytics';
+
 
 // Function to toggle between light and dark theme by switching class on <body>
 function toggleTheme() {
@@ -64,6 +64,10 @@ function resetInputFields() {
     inputs.forEach(input => {
         input.value = ''; // Clear the input field
     });
+    
+    document.getElementById('cgpaResult').innerText = '0.00';
+    document.getElementById('cgpaResult').style.color = "white";
+    document.getElementById('totalCredit').innerText = 0;
 }
 
 function showInfo() {
@@ -78,4 +82,3 @@ function showInfo() {
 // document.querySelectorAll('input').forEach(input => {
 //     input.addEventListener('input', calculateCGPA);
 // });
-inject();

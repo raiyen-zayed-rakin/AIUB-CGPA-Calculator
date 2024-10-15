@@ -51,6 +51,10 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow effect */
     
 }
+.form-control:focus {
+    background-color: inherit;
+    color: white;
+}
 .input-group-text {
     color:#08c2a8;
 }
