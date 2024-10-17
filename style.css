@@ -93,10 +93,12 @@ a:hover {
 h1 {
     font-family: SourceSansPro,Helvetica,Arial,sans-serif;
 }
-h1, h3 {
-    margin: 20px 0; /* Add margin for spacing */
+h1 {
+    margin: 10px 0; /* Add margin for spacing */
 }
-
+h3 {
+    margin: 12px 0;
+}
 /* Dark theme styles */
 .dark-theme {
     background-color: #f2f3f6; /* Dark background color */
@@ -158,9 +160,6 @@ h1, h3 {
 }
 
 /* Responsive styles */
-.col-sm-12 {
-    margin-top: 5px;
-}
 
 .switch {
 position: relative;
