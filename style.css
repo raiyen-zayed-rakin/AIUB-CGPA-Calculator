@@ -40,7 +40,9 @@ a:hover {
     border: none;
     height: 40px;
 }
-
+.col-md-6 {
+    margin-bottom: 5px;
+}
 .result-section {
     background-color: #23262e;
 }
@@ -85,11 +87,15 @@ a:hover {
 .heading-info {
     text-align: center;
 }
+#cgpaResult, #totalCredit {
+    color: #08c2a8;
+}
 .heading-info, .cgpa-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     font-family: SourceSansPro,Helvetica,Arial,sans-serif;
 }

@@ -39,7 +39,7 @@ function calculateCGPA() {
 
     const resultElement = document.getElementById("cgpaResult");
     if (cgpa >= 3.5) {
-        resultElement.style.color = "greenyellow";
+        resultElement.style.color = "green";
     } else if (cgpa >= 2.0) {
         resultElement.style.color = "orange";
     } else {
@@ -79,8 +79,10 @@ function resetInputFields() {
     });
     
     document.getElementById('cgpaResult').innerText = '0.00';
-    document.getElementById('cgpaResult').style.color = "white";
+    document.getElementById('cgpaResult').style.color = "#08c2a8";
     document.getElementById('totalCredit').innerText = 0;
+    document.getElementById('totalCredit').style.color = "#08c2a8";
+
 }
 
 function showInfo() {
