@@ -6,10 +6,10 @@
 - Just major info input and CGPA/GPA output.
 
 ## Dark Theme
-<img src="Images/Screenshot 2024-10-15 010444.png">
+<img src="Images/Screenshot 2024-10-18 151353.png">
 
 ## Light Theme
-<img src="Images/Screenshot 2024-10-15 010503.png">
+<img src="Images/Screenshot 2024-10-18 151415.png">
 
 ## Intructions:
 - Go to your Grade Reports BySemester page in AIUB Portal.
