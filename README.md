@@ -18,8 +18,46 @@
 - Enter the values in their place. (Leave empty will be handled automatically).
 - Press Calculate CGPA and see the result.
 
+## Site Link:
+```bash
+aiub-cgpa-calculator.vercel.app/
+```
 ## Proxy Site:
+```bash
 https://raiyen-zayed-rakin.github.io/AIUB-CGPA-Calculator/
+```
 
+## Getting Started
+
+1. **Clone the repository**:
+   ```
+   https://github.com/raiyen-zayed-rakin/AIUB-CGPA-Calculator.git
+   ```
+2. **Build and Run**:
+   - Open the project in Visual Studio Code.
+   - Install Live Server extension.
+   - Go live after open index.html.
+   - Run and edit the project.
 ## Contributions:
-Any sort of contributions and advices are highly appreciated. 
+Any sort of contributions and advices are highly appreciated.
+Do the following for contributing:
+- Star and Fork the repository.
+- Clone the repo in your local storage
+  ```
+  git clone "forked repo link"
+  ```
+- Create a new branch
+  ```
+  git checkout -b feature-branch-name
+  ```
+- Make your changes.
+- Commit your changes
+  ```
+  git commit -m 'some feature'
+  ```
+- Push to the branch
+  ```
+  git push origin feature-branch-name
+  ```
+- Open a pull request.
+
